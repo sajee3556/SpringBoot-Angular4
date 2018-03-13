@@ -1,0 +1,5 @@
+spring.jpa.hibernate.ddl-auto=create-drop // then
+        *Spring JPA data removed after shutdown of application // insted of use -> spring.jpa.hibernate.ddl-auto=update
+
+
+

@@ -1,0 +1,4 @@
+cd location: ng new angular4-client /*Project 'angular4-client' successfully created.*/
+                            in Intellij it detects and configure automatically.
+	cd  angular4-client : npm start                  *****->  it invoke ng serve <compiled successfully>
+
