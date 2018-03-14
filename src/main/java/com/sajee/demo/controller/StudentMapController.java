@@ -32,6 +32,7 @@ public class StudentMapController {
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    @CrossOrigin(origins = "http://localhost:4200")
     public Student getStudentById(@PathVariable("id") Long id) {
         return studentMapService.getById(id);
     }

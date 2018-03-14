@@ -2,3 +2,45 @@ cd location: ng new angular4-client /*Project 'angular4-client' successfully cre
                             in Intellij it detects and configure automatically.
 	cd  angular4-client : npm start                  *****->  it invoke ng serve <compiled successfully>
 
+	spec.ts : is used for unit Testing
+
+1. Component: ng new componentName<angular4-client>
+    src -> app : app.component.ts : @component <selector define in Index.html> ,import and export
+
+    cd angular4-client -> ng g(generate) component : student-list // then app.module.ts is import new component
+
+    **** index.html -> dircet app.component.html -> we can inject any component we create using that html:
+
+Angular Templating :
+    1. Defining External Templates : templateUrl: './app.component.html',
+    2. Defining Inline HTML Templates : template: ` <h1>Hey guys!</h1>   <p>How are you dong?</p> `,
+    3. Interpolation : interpolation works by wrapping double curly brackets around a template expression.
+        "Loading dynamic data "
+        we can define a object in app.component.ts
+    4. ngFor and Iterables: defining arrays --> <div *ngFor="let b of students">
+                                                  {{b.name }}
+    5. ngIf and Else : <li *ngIf="b.name == 'Mani'">Yeah, I exist.</li>
+
+        EX: <div *ngIf="myArr; then tmpl1 else tmpl2"></div>
+              <ng-template #tmpl1>I'm here</ng-template>
+              <ng-template #tmpl2>I'm not here</ng-template>
+
+ Property Binding :
+      <img src="{{ angularLogo }}">
+      <img [src]="angularLogo">
+      <img bind-src="angularLogo">
+
+      ---property binding is on an input element's disabled attribute.--- ButtonStatus
+
+
+  Event Binding in Action:
+        <button (click)="myEvent($event)">My Button</button>
+             Defining CSS when Generating a New Project:
+
+Creating a Service: ng g service students
+            -> then app.module.ts is import {StudentsService} from "./students/students.service";
+            whereever you want fetch data just import the service and within ngOnInit method call the method, constructor must initiate
+            the service
+
+ Animations > npm install @angular/animations@latest --save
+

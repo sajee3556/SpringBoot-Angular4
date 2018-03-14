@@ -11,4 +11,8 @@ export class StudentsService {
   getAll(): Observable<any> {
     return this.http.get('http://localhost:8080/students');
   }
+
+  getStudentById() : Observable<any> {
+    return this.http.get('http://localhost:8080/students/3');
+  }
 }

@@ -19,4 +19,6 @@ export class StudentListComponent implements OnInit {
     )
   }
 
+  myArr = ['him','hers','yours','theirs'];
+
 }

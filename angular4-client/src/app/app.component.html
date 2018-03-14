@@ -1,8 +1,11 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
+  <h1 [class.red-title]="title">
+    Welcome to {{student.name}} in {{title}}!
   </h1>
+  <h2>
+    <p>{{ myObject.gender }}</p>
+  </h2>
   <button [disabled]="buttonStatus" (click)="myEvent($event)" class="button" >My Button</button>
   <img width="300" height="300" align="left" src="assets/trex.png">
  </div>

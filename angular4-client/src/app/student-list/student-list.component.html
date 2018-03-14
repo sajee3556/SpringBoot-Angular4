@@ -3,4 +3,7 @@
 </p>
 <div *ngFor="let b of students">
   {{b.name }}
+  <li *ngFor="let arr of myArr">{{ arr }}</li>
+  <li *ngIf="b.name == 'Mani'">Yeah, I exist.</li>
 </div>
+
