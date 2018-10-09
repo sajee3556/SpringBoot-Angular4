@@ -43,6 +43,7 @@ public class StudentMapController {
 //    }
 //
     @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
+    @CrossOrigin(origins = "http://localhost:4200")
     public void addStudent(@RequestBody Student student) {
         studentMapService.saveOrUpdate(student);
     }

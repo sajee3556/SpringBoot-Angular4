@@ -1,0 +1,2 @@
+Go to app.module.ts -> import {FormsModule} from "@angular/forms"; add ReactiveFormsModule
+        Then add in imports and save

@@ -1,5 +1,7 @@
 # SpringBoot-Angular4
 
+Uncomment package.json and package-lock.json
+
 1. install Node.js for aungular: node -v & npm -v
  A common task for a web server can be to open a file on the server and return the content to the client.
  Node.js eliminates the waiting, and simply continues with the next request.

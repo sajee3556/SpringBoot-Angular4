@@ -1,11 +1,40 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1 [class.red-title]="title">
-    Welcome to {{student.name}} in {{title}}!
-  </h1>
-  <h2>
-    <p>{{ myObject.gender }}</p>
-  </h2>
+  <!--<h1 [class.red-title]="title">-->
+    <!--Welcome to {{student.name}} in {{title}}!-->
+  <!--</h1>-->
+  <!--<h2>-->
+    <!--<p>{{ myObject.gender }}</p>-->
+  <!--</h2>-->
+
+  <form class="form-horizontal" [formGroup]="basicInfoForm" (ngSubmit)="onFormSubmit()">
+    <fieldset>
+      <legend>Basic INFO</legend>
+
+      <!--- ID Block --->
+      <div class="form-group">
+        <label for="id">ID</label>
+        <input type="number"  id="id"  placeholder="ID: " formControlName="id">
+      </div>
+      <!--- NAME Block --->
+      <div class="form-group">
+        <label for="name">NAME</label>
+        <input type="text"  id="name"   placeholder="Name: " formControlName="name">
+      </div>
+
+      <div class="form-group">
+        <label for="department" >Department</label>
+        <input type="text" id="department"  placeholder="Department: " formControlName="department">
+      </div>
+
+      <!--- Buttons Block --->
+      <div class="form-group">
+        <button type="reset" class="btn btn-default">Cancel</button>
+        <button type="submit"  class="btn btn-primary">Submit</button>
+      </div>
+    </fieldset>
+  </form>
+
   <button [disabled]="buttonStatus" (click)="myEvent($event)" class="button" >My Button</button>
   <img width="300" height="300" align="left" src="assets/trex.png">
  </div>

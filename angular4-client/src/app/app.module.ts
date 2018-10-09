@@ -3,7 +3,7 @@ import {NgModule} from '@angular/core';
 
 
 import {AppComponent} from './app.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import { StudentListComponent } from './student-list/student-list.component';
 import {StudentsService} from "./students/students.service";
@@ -17,7 +17,8 @@ import {StudentsService} from "./students/students.service";
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [StudentsService],
   bootstrap: [AppComponent]

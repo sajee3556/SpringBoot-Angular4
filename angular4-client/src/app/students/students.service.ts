@@ -15,4 +15,8 @@ export class StudentsService {
   getStudentById() : Observable<any> {
     return this.http.get('http://localhost:8080/students/3');
   }
+
+  addStudent(data){
+    return this.http.post('http://localhost:8080/students',JSON.stringify(data));
+  }
 }
