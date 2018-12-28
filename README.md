@@ -1,4 +1,4 @@
-# SpringBoot-Angular4
+# SpringBoot-Angular6
 
 Uncomment package.json and package-lock.json
 
