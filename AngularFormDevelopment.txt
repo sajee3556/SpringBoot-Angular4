@@ -1,2 +1,6 @@
-Go to app.module.ts -> import {FormsModule} from "@angular/forms"; add ReactiveFormsModule
+Go to app.module.ts -> import {FormsModule} from "@angular/forms";
+                            add ReactiveFormsModule
         Then add in imports and save
+
+ 1. routing -> app-routing.module.ts
+ 2. app.module.ts -> defines and imports all components
